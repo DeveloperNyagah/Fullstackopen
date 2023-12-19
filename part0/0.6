@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    Note right of browser: The user creates a new note and clicks the Save button
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/notes with the new note data
+    activate server
+    server-->>browser: Status code 201 Created
+    deactivate server
+
+    Note right of browser: The browser adds the new note to the list of notes and resets the text field
