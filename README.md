@@ -1,1 +1,1 @@
-Fullstackopen course exercises part 0.
+Fullstackopen course exercises solutions.
